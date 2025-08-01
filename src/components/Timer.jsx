@@ -41,7 +41,7 @@ export function Timer(props) {
   useEffect(() => {
     document.title = `${minutes < 10 ? `0${minutes}` : minutes}:${
       seconds < 10 ? `0${seconds}` : seconds
-    }`;
+    }`+" "+"Pomify";
   }),
     [minutes, seconds];
 
