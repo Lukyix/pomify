@@ -40,7 +40,7 @@ export function ButtonsColorsText() {
             onClick={toggleControlsText}
             className="control_btn bg_pos_btn"
           >
-            <p class="material-icons">abc</p>
+            <p class="material-icons">abcd</p>
           </button>
         </div>
       </div>
