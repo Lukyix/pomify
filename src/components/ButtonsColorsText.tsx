@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+﻿import { useState } from "react";
 import { dataTextColor } from "./data";
 
 export function ButtonsColorsText() {
-  const [isVisibleColorsText, setIsVisibleColorsText] = useState(false);
-  const [mapDataText, setMapDataText] = useState(dataTextColor);
+  const [isVisibleColorsText, setIsVisibleColorsText] =
+    useState<boolean>(false);
+  const mapDataText = dataTextColor;
 
-  function toggleControlsText() {
+  function toggleControlsText(): void {
     setIsVisibleColorsText((prev) => !prev);
   }
 
-  function handleColorChangeText(color) {
+  function handleColorChangeText(color: string): void {
     const textColor = document.querySelectorAll("span");
     textColor.forEach((element) => {
       element.style.color = color;
@@ -40,7 +41,7 @@ export function ButtonsColorsText() {
             onClick={toggleControlsText}
             className="control_btn bg_pos_btn"
           >
-            <p class="material-icons">abcde</p>
+            <p className="material-icons">abcde</p>
           </button>
         </div>
       </div>

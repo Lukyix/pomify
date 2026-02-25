@@ -1,4 +1,9 @@
-const dataBgColor = [
+export interface ColorItem {
+  id: number;
+  color: string;
+}
+
+const dataBgColor: ColorItem[] = [
   { id: 1, color: "linear-gradient(to right, #0f2027, #203a43, #2c5364)" },
   { id: 2, color: "linear-gradient(90deg, #C79A1F 0%, #2A145A 100%)" },
   { id: 3, color: "linear-gradient(90deg, #7A9110 0%, #00673F 100%)" },
@@ -11,7 +16,7 @@ const dataBgColor = [
 
 export { dataBgColor };
 
-const dataTextColor = [
+const dataTextColor: ColorItem[] = [
   { id: 10, color: "rgba(255,255,255, 0.5)" },
   { id: 11, color: "rgba(0,0,0, 0.5)" },
 ];

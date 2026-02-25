@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+﻿import { useState } from "react";
 import { dataBgColor } from "./data";
 
 export function ButtonsColorsBg() {
-  const [isVisibleColorsBg, setIsVisibleColorsBg] = useState(false);
-  function toggleControlsBg() {
+  const [isVisibleColorsBg, setIsVisibleColorsBg] = useState<boolean>(false);
+  function toggleControlsBg(): void {
     setIsVisibleColorsBg((prev) => !prev);
   }
 
-  const [mapDataBg, setMapData] = useState(dataBgColor);
+  const mapDataBg = dataBgColor;
 
-  function handleColorChange(color) {
+  function handleColorChange(color: string): void {
     document.body.style.background = color;
   }
 
@@ -35,7 +35,7 @@ export function ButtonsColorsBg() {
             onClick={toggleControlsBg}
             className="control_btn txt_pos_btn"
           >
-            <p class="material-icons">wallpaper</p>
+            <p className="material-icons">wallpaper</p>
           </button>
         </div>
       </div>
